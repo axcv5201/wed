@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.bg-up-c {
+  background-image: url(images/bbbg_02.png);
+}
+
+#bg-up {
+  background-image: url(images/bbbg_02.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  /*background-color: #ffff1c;*/
+}
+
+.header {
+  /*background-color: #ccc;*/
+}
+.container {
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+  padding: 80px;
+}
+.header .logo {
+  width: 140px;
+}
+.header .logo img {
+  width: 100%;
+  vertical-align: middle;
+}
+.header .menu {
+  display: flex;
+}
+.header .menu a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 4em;
+  position: relative;
+}
+.header .menu a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 35px;
+  background: #00a0e9;
+  transition: width 0.5s;
+}
+.header .menu a:hover::after {
+  width: 63%;
+}
+/*header-end*/
+.center-pic {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  /*max-width: 1920px;*/
+}
+
+/*關於我們*/
+.about-us {
+  display: flex;
+  max-width: 1920px;
+  margin: auto;
+  padding: 0 50px;
+}
+.about-us-pic {
+  width: 960px;
+  padding: 130px 10px 130px 130px;
+}
+.about-us-pic img {
+  width: 600px;
+}
+.about-us-txt {
+  width: 960;
+  padding: 200px 30px;
+  font-size: 160%;
+  line-height: 1.6;
+}
+.about-us-txt h1 {
+  border-bottom: 2px solid #00a0e9;
+  width: 222px;
+
+  margin-bottom: 20px;
+}
+.txth {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.us-button {
+  font-size: 1.375rem;
+  background-color: #00a0e9;
+  color: #fff;
+  border-radius: 5px;
+  padding: 7px 10px;
+  text-decoration: none;
+}
+.us-button:hover {
+  font-size: 1.5rem;
+}
+
+/*最新消息*/
+.new {
+  display: flex;
+  position: relative;
+  padding-top: 30px;
+}
+.item {
+  position: absolute;
+  left: 43%;
+}
+.new-roll-out {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*熱銷產品 slids */
+
+.slider {
+  box-sizing: border-box;
+}
+
+.slides {
+  width: 50%;
+  margin: 100px auto;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+/*.slick-slide {
+  transition: all ease-in-out 0.3s;
+  opacity: 0.2;
+}*/
+
+/*.slick-active {
+  opacity: 0.3;
+}*/
+
+/*.slick-current {
+  opacity: 1;
+}*/
+.slick-dots li button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #000;
+}
